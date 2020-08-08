@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- API LOLIPOP -->
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+
+        <!-- Other material colors -->
+        <item name="android:colorBackground">@color/primaryLightColor</item>
+
+        <!-- Dark or light status bar icons-->
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+
+        <!-- Material components -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyApp.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyApp.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.LargeComponent</item>
+
+        <!-- Bottom nav bar-->
+        <item name="bottomNavigationStyle">@style/BottomNavView</item>
+
+        <!-- CardView -->
+        <item name="materialCardViewStyle">@style/Card</item>
+
+        <!-- Font family -->
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="CardButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="iconTint">@color/colorSecondary</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomNavView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/uiTransparent</item>
+        <item name="itemIconTint">@drawable/bottom_navigation_states</item>
+        <item name="itemTextColor">@drawable/bottom_navigation_states</item>
+        <item name="labelVisibilityMode">selected</item>
+        <item name="itemHorizontalTranslationEnabled">true</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/search_back</item>
+    </style>
+
+    <style name="AppbarDetail" parent="Widget.Design.AppBarLayout">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="ToolbarDetail" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Diamond">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="FondoButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="iconTint">@color/colorSecondary</item>
+        <item name="backgroundTint">@color/colorSuggest</item>
+    </style>
+</resources>

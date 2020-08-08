@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material components colors -->
+    <color name="primaryColor">#1a1a1a</color>
+    <color name="primaryLightColor">#161616</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="colorSecondary">#fafafa</color>
+
+    <!-- Classic colors for IU -->
+    <color name="colorPrimary">#161616</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#fafafa</color>
+
+    <!-- Others -->
+    <color name="uiTransparent">#F20E0E0E</color>
+    <color name="search_back">#222222</color>
+</resources>
